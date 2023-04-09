@@ -37,7 +37,7 @@ jobs:
       - run:       
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: coverage run --source=mypkg -m pytest COVERALLS_REPO_TOKEN=1eVZjYxIc6aIF3JkGdYMbBksXk1af5bSA coveralls
+          command: coverage run --source=mypkg -m pytest
       
 
 # Invoke jobs via workflows
