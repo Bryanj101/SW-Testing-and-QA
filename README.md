@@ -1,1 +1,1 @@
-[![CircleCI](https://circleci.com/gh/Bryanj101/python_app.svg?style=svg)](https://circleci.com/gh/Bryanj101/python_app)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Bryanj101/SW-Testing-and-QA/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Bryanj101/SW-Testing-and-QA/tree/main)
