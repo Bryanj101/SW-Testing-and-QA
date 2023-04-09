@@ -1,6 +1,6 @@
 from django.urls import path
-from BMI.views import Index
+from .views import bmi
 
 urlpatterns = [
-    path('', Index.as_view(), name='index'),
+    path('', bmi),
 ]
