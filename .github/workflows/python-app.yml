@@ -28,7 +28,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: playwright install
-      run: playwright install
+      run: |
+        playwright install
+        playwright install-deps
     - name: Run your tests and coverage
       run: coverage run -m pytest
     - name: coverage report
