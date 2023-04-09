@@ -27,12 +27,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+    - name: Run your tests
+      run: pytest
     - name: coverage
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
           coveralls --service=github
-    - name: Run your tests
-      run: pytest
 
     
