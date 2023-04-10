@@ -37,7 +37,9 @@ jobs:
       - run:       
           name: Run tests
           # This assumes pytest is installed via the install-package step above
-          command: coverage run --source=mypkg -m pytest
+          command: |
+            coverage run -m pytest
+            coverage run -a manage.py test
       
 
 # Invoke jobs via workflows
