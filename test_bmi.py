@@ -1,4 +1,5 @@
 from bmi import BMICalculator
+from bmi import main
 import pytest
 
 def test_weight_input_as_int(monkeypatch):
@@ -178,3 +179,9 @@ def test_bmi_catergory_obese_open():
     value = BMICalculator()
     value.bmi = 35
     assert value.bmi_category() == "Obese"
+    
+def test_main(monkeypatch, capsys):
+    monkeypatch.setattr('builtins.input', lambda _: 1)
+    main()
+    captured = capsys.readouterr()
+    assert captured.out == "BMI =  720.0\n"
