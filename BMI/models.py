@@ -1,7 +1,7 @@
 from django.db import models
 
 class BMICalculator(models.Model):
-    weight = models.FloatField()
+    weight = models.FloatField(ZeroDivisionError)
     height = models.FloatField()
 
     @property
@@ -40,4 +40,4 @@ class BMICalculator(models.Model):
             return "Underweight"
     
     def __str__(self):
-        return f"{self.weight} kg, {self.height} cm"
+        return f"{self.weight} lbs, {self.height} in"
